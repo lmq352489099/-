@@ -218,6 +218,9 @@ export default {
     },
     getAllData() {
       this.axios.get("/profile").then(({ data }) => {
+        console.log(data);
+        console.log({ data });
+
         if (!data.code) {
           if (data.userInfo) {
             this.set_userInfo(data.userInfo);

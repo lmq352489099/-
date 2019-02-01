@@ -27,6 +27,8 @@ app.use('/public', express.static(__dirname + '/public')); //设置静态资源
 
 //设置登录用户的session
 app.use((req, res, next) => {
+  console.log(req.session);
+
   if (req.session.userInfo) {
     try {
       req.userInfo = req.session.userInfo;
