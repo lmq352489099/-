@@ -8,8 +8,8 @@ let OSS = require('ali-oss');
 //阿里云oss配置自己去官网瞧
 let client = new OSS({
   region: 'oss-cn-hangzhou',
-  accessKeyId: 'LTAIpvGBzKRemVgL',
-  accessKeySecret: 'ydCwToUZjiPF7jqQTGzrSawEHWaBv1'
+  accessKeyId: 'LTAIpvdedadadxz',
+  accessKeySecret: 'ydCwToUZjiPF7jqQTGzrSaasdsadasdfegsdfsdfswEHWaBv1'
 });
 client.useBucket('lmqimagepath');
 async function put(fileName, filePath, cb) {
